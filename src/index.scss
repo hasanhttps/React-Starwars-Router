@@ -1,0 +1,21 @@
+@import './assets/styles/variables.scss';
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Stars, sans-serif;
+}
+
+a{
+    color: $grey-color;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: "Stars";
+    src: url("./assets/fonts/star.woff") format("woff");
+}
