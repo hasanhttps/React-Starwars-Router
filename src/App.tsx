@@ -1,7 +1,8 @@
 import './App.scss';
+import { Link } from 'react-router-dom';
 
 function App() {
-
+  
   return (
     <div className='container'>
       <div className='header'>
@@ -11,13 +12,12 @@ function App() {
 
         <div className='header__navbar'>
           <nav>
-            <a>Home</a>
-            <a>Films</a>
-            <a>People</a>
-            <a>Planets</a>
-            <a>Species</a>
-            <a>Starships</a>
-            <a>Vehicles</a>
+            <Link className='link' to="/films">Films</Link>
+            <Link className='link' to="/people">People</Link> 
+            <Link className='link' to="/planets">Planets</Link> 
+            <Link className='link' to="/species">Species</Link> 
+            <Link className='link' to="/starships">Starships</Link> 
+            <Link className='link' to="/vehicles">Vehicles</Link> 
           </nav>
         </div>
       </div>

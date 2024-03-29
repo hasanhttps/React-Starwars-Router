@@ -1,0 +1,18 @@
+/* Globals */
+
+@import '../../assets/styles/variables.scss';
+
+/* Elements */
+
+.error-container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-container h1, p{
+    color: $white;
+    font-size: 30px;
+}

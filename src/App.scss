@@ -4,7 +4,6 @@
 
 .container{
   height: 100vh;
-  background-image: url('./assets/images/background.jpg');
 }
 
 /*Header*/
@@ -33,6 +32,15 @@
     nav{
       display: flex;
       gap: 30px;
+
+      .link{
+        color: $grey-color;
+        text-decoration: none;
+      }
+      
+      .link:hover{
+          cursor: pointer;
+      }
     }
   }
 }

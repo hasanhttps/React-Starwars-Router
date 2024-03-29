@@ -5,14 +5,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: Stars, sans-serif;
-}
-
-a{
-    color: $grey-color;
-}
-
-a:hover{
-    cursor: pointer;
+    background-image: url('./assets/images/background.jpg');
 }
 
 @font-face {
