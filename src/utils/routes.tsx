@@ -1,6 +1,11 @@
-import React from "react";
-import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
+import Film from "../views/Films/Films";
+import People from "../views/People/People";
+import Planets from "../views/Planets/Planets";
+import Species from "../views/Species/Species";
+import Vehicles from "../views/Vehicles/Vehicles";
+import Starships from "../views/Starships/Starships";
+import { createBrowserRouter } from "react-router-dom";
 import ErrorElement from "../views/ErrorElement/ErrorElement";
 
 export const router = createBrowserRouter([
@@ -8,5 +13,29 @@ export const router = createBrowserRouter([
         path: "/",
         element: <App/>,
         errorElement: <ErrorElement/>
+    },
+    {
+        path:"/films",
+        element:<Film/>
+    },
+    {
+        path:"/people",
+        element:<People/>
+    },
+    {
+        path:"/planets",
+        element:<Planets/>
+    },
+    {
+        path:"/species",
+        element:<Species/>
+    },
+    {
+        path:"/starships",
+        element:<Starships/>
+    },
+    {
+        path:"/vehicles",
+        element:<Vehicles/>
     }
 ]);
