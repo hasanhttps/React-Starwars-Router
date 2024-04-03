@@ -26,6 +26,66 @@ body{
     gap: 40px;
 }
 
+.wrapper{
+    position: relative;
+    left: 160px;
+    transform: translate(-50%, -50%);
+}
+  
+.link_wrapper{
+    position: relative;
+}
+  
+.see-details{
+    display: block;
+    width: 200px;
+    height: 45px;
+    line-height: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    background: #333;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 3px solid #333;
+    transition: all .35s;
+}
+  
+.icon{
+    width: 40px;
+    height: 40px;
+    border: 3px solid transparent;
+    position: absolute;
+    transform: rotate(45deg);
+    right: 0;
+    top: 0;
+    z-index: -1;
+    transition: all .35s;
+}
+  
+.icon svg{
+    width: 30px;
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+    transform: rotate(-45deg);
+    fill: #2ecc71;
+    transition: all .35s;
+}
+  
+.see-details:hover{
+    width: 200px;
+    border: 3px solid #2ecc71;
+    background: transparent;
+    color: #2ecc71;
+  }
+  
+.see-details:hover + .icon{
+    border: 3px solid #2ecc71;
+    right: -20%;
+}
+
 @font-face {
     font-family: "Stars";
     src: url("./assets/fonts/star.woff") format("woff");

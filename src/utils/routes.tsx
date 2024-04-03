@@ -3,6 +3,8 @@ import Film from "../views/Film/Film";
 import Films from "../views/Films/Films";
 import People from "../views/People/People";
 import Person from "../views/Person/Person";
+import Planet from "../views/Planet/Planet";
+import Specie from "../views/Specie/Specie";
 import Planets from "../views/Planets/Planets";
 import Species from "../views/Species/Species";
 import Vehicles from "../views/Vehicles/Vehicles";
@@ -47,5 +49,13 @@ export const router = createBrowserRouter([
     {
         path:"/films/:id",
         element:<Film/>
+    },
+    {
+        path:"/planets/:id",
+        element:<Planet/>
+    },
+    {
+        path:"/species/:id",
+        element:<Specie/>
     }
 ]);

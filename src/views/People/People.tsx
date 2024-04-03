@@ -15,7 +15,7 @@ const People = () => {
             setPeople(results);
 
         } catch (error) {
-            console.error('Error fetching films:', error);
+            console.error('Error fetching people:', error);
         }
     };
 
