@@ -1,6 +1,8 @@
 import App from "../App";
-import Film from "../views/Films/Films";
+import Film from "../views/Film/Film";
+import Films from "../views/Films/Films";
 import People from "../views/People/People";
+import Person from "../views/Person/Person";
 import Planets from "../views/Planets/Planets";
 import Species from "../views/Species/Species";
 import Vehicles from "../views/Vehicles/Vehicles";
@@ -16,7 +18,7 @@ export const router = createBrowserRouter([
     },
     {
         path:"/films",
-        element:<Film/>
+        element:<Films/>
     },
     {
         path:"/people",
@@ -37,5 +39,13 @@ export const router = createBrowserRouter([
     {
         path:"/vehicles",
         element:<Vehicles/>
+    },
+    {
+        path:"/people/:id",
+        element:<Person/>
+    },
+    {
+        path:"/films/:id",
+        element:<Film/>
     }
 ]);
