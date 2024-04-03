@@ -1,11 +1,29 @@
 @import './assets/styles/variables.scss';
 
+h1,h2{
+    color: $white;
+}
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: Stars, sans-serif;
+}
+
+body{
     background-image: url('./assets/images/background.jpg');
+}
+
+.container{
+    height: 100vh;
+}
+
+#list{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    gap: 40px;
 }
 
 @font-face {
